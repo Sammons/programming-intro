@@ -27,3 +27,5 @@ Some examples:
 * JavaScript is interpreted
 * Python is interpreted
 * Java compiles to a fake-assembly which is then interpreted
+
+[Next: High Level Programming](06_high_level_programming.html)

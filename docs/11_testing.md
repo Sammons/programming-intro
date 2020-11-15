@@ -51,3 +51,5 @@ These tests run in production. It is bad form to let your users detect your mist
 Often canaries are really minimal, sometimes even just health checks, and they tend to be most helpful in proactively detecting outages.
 
 If google.com goes down, you can be sure a canary just fell over!
+
+[Next: Infra](12_infrastructure.html)

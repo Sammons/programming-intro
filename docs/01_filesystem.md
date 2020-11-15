@@ -111,3 +111,5 @@ This means the owner has read/write access, and others have read access. Hmm may
 
 You should get used to interpreting bash outputs on your own. I recommend googling stack exchange or stack overflow. Here's an example:
 *  https://unix.stackexchange.com/questions/103114/what-do-the-fields-in-ls-al-output-mean
+
+[Next: Shell Scripting](02_shell_scripting_intro.html)

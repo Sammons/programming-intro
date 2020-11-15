@@ -88,3 +88,4 @@ So you learn one way to build UIs and it can be at least somewhat re-used in lot
 
 > If you want to build a UI just for yourself you can write an index.html file and drag it into chromium to see how it looks.
 
+[Next: Version Control](10_version_control.html)

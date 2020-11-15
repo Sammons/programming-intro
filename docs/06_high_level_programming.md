@@ -27,5 +27,4 @@ They use lots of libraries, and you have to read the API (Application Program In
 
 High level programmers spend as much time figuring out what to write, as writing the actual code.
 
-
-
+[Next: Interwebs](07_interwebs.html)

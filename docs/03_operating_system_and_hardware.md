@@ -58,3 +58,5 @@ The operating system can secretly pause/resume your program many times during it
 Just be aware that even though you have 100 threads in your program, they aren't all running at the same time unless you have at least 100 CPU cores.
 
 This is called a "Context Switch" which the CPU swaps between who is running on a core.
+
+[Next: Low Level Programming](04_low_level_programming.html)

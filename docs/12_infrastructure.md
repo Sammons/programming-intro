@@ -31,3 +31,5 @@ If you want to share a static website, you can push it to github and use github 
 
 
 Think about it, search around, do not spend money on a service "that will be big" instead find a pay-as-you go service which scales cost and infrastructure with traffic.
+
+[Next: Editors](13_editors.html)

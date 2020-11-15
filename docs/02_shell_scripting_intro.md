@@ -114,13 +114,13 @@ The `sudo` program changes your current user to `root` while you run the command
 
 `root` has complete control over your system, with all the risks and advantages that entails. Some gotchas and guidelines:
 * It is generally ok when running `sudo apt get install <program>`
-  * Generally this is when you are installing programs globally on a computer no one else uses.
+  * Generally this is when you are installing programs globally on a linux computer no one else uses.
 * It is usually ok when running `chmod` to grant yourself permissions.
 * `chown` is dangerous when running sudo. Usually you find yourself running `chown` to give yourself ownership of files, which in some cases blocks the system from accessing those files, and can cause problems. 
 * If you run `sudo` to install something and you should not have used `sudo`, then you may have to `chown` or `sudo` liberally to remove that thing you installed.
   * This happens because `root` owns system folders, you used `sudo` to install something as `root` and now your personal account does not have permission to edit those system folders. This is for your protection.
 
-As a general rule, try to keep all installs and programs inside your home directory, where you own everything and will not need sudo.
+As a general rule, try to keep all installs and programs inside your home directory, where you own everything and will not need sudo. When you go professional you may not have sudo available to you on business machines, so get used to working without it.
 
 ## Final notes about shell scripting
 
@@ -129,3 +129,4 @@ As a general rule, try to keep all installs and programs inside your home direct
 * There is a difference between your Terminal and your Shell.
 * One day you may be at risk of running `rm -rf . /*` which is a common typo from `rm -rf ./*`. This typo deletes your whole system :) Shell scripting is powerful, small mistakes have consequences.
 
+[Next: Operating Systems](03_operating_system_and_hardware.html)

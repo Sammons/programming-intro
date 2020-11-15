@@ -30,3 +30,5 @@ Why the name? Torvalds says he named it after himself (*shrug*).
 This is a deep topic, all I can say is read the docs and get on github. Learning to be good at git is important.
 
 github.com has good docs and is now owned by Microsoft for better or worse.
+
+[Next: Testing](11_testing.html)

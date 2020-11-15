@@ -82,16 +82,4 @@ You can check `strace -c` if you think some disk writes or network reads are the
 
 This stuff is cool, but rarely important to day-to-day work.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Next: Compilers & Interpreters](05_compilers_and_interpreters.html)
