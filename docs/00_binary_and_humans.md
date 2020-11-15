@@ -58,7 +58,7 @@ Computers just have 2 fingers.
 
 Computers represent the *same* quantities with *different* numbers.
 
-Take the number 0123. That could also be calculated like this by someone with 10 fingers:
+Take the number 0123. That could also be calculated like this by someone with 10 fingers. Remember digits represent a multiple of 10. You have 1s, 10s, 100s, 1000s places from right to left:
 
 ```
 3 * 1
@@ -67,7 +67,7 @@ Take the number 0123. That could also be calculated like this by someone with 10
 0 * 1000 (10x10x10)
 ```
 
-A computer would calculate 0123 like this instead:
+A computer would calculate 0123 like this instead. They multiply by 2, so each digit represents 1s, 2s, 4s, 8s, 16s, 32s, 64s, 128s with each digit being 0 or 1:
 
 ```
 1 * 1 +
@@ -105,5 +105,47 @@ People are not always using 1024x, sometimes they use 1000x. There is always som
 It usually will not matter because if you need to know how many bytes of something there are I recommend saying it precisely. Like 1,000,692,372 bytes, rather than saying 1GB.
 
 Use GB or MB or Gb or Mb when precision is less important.
+
+## A little example in the shell
+
+By default bash will try to decode binary values as plaintext. So if you `cat` an image you will not see an image in your terminal, instead you get garbage.
+
+Modern CPUs do not typically operate on one bit at a time; because they are so fast 32, 64 even 128 bit operations exist. 8 bits is often the smallest unit.
+
+Data would take up tons of space if we showed 0s and 1s and programmers have a hard time reading that. So instead when we view binary we view it in hexidecimal, which is compact and two digits represents 8 bits or an entire byte.
+
+One hexidecimal digit can represent values 0-15 (this is base 16 instead of base 10 or base 2), but our number system can't do that. We run out at 9! So programmers decided to represent 10, 11, 12, 13, 14, 15 as A, B, C, D, E, F. To indicate a value is hexidecimal we prefix it with 0x, so if you see "0xA9" that is actually two bytes of data, representing 10 and 9. The hex number system (base 16) works just like binary and base 10 to represent 123, but see how fast we get there? Kids would count so high if they had 16 fingers:
+
+```
+B * 1
+7 * 16
+0 * 256 (16x16)
+```
+
+> 0x7B
+
+Remember two digits in hex is one byte, which can represent a number as large as 255. In UTF-8 and ASCII one byte is enough to represent basic characters and inputs in english.
+
+__Example__
+
+Remember "1" is 49 when using ASCII or UTF8 to encode text? 49 is 0x31 in hex, which is how we look at binary.
+
+Run `echo -n "1" > sample.txt` to write the character "1" to a file without an extra newline.
+
+We can view the binary with the `hexdump` shell command:
+
+`hexdump -C sample.txt` shows:
+```
+00000000  31
+00000001
+```
+
+> [doc for hexdump](https://man7.org/linux/man-pages/man1/hexdump.1.html)
+
+The first number above is the offset, the second is the value at that point.
+
+See our "31" in hex at offset 0? As expected.
+
+-----
 
 [Next: File Systems](01_filesystem.html)
