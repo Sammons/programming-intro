@@ -114,7 +114,7 @@ Modern CPUs do not typically operate on one bit at a time; because they are so f
 
 Data would take up tons of space if we showed 0s and 1s and programmers have a hard time reading that. So instead when we view binary we view it in hexidecimal, which is compact and two digits represents 8 bits or an entire byte.
 
-One hexidecimal digit can represent values 0-15 (this is base 16 instead of base 10 or base 2), but our number system can't do that. We run out at 9! So programmers decided to represent 10, 11, 12, 13, 14, 15 as A, B, C, D, E, F. To indicate a value is hexidecimal we prefix it with 0x, so if you see "0xA9" that is actually two bytes of data, representing 10 and 9. The hex number system (base 16) works just like binary and base 10 to represent 123, but see how fast we get there? Kids would count so high if they had 16 fingers:
+One hexidecimal digit can represent values 0-15 (this is base 16 instead of base 10 or base 2), but our number system can't do that. We run out at 9! So programmers decided to represent 10, 11, 12, 13, 14, 15 as A, B, C, D, E, F. To indicate a value is hexidecimal we prefix it with 0x, so if you see "0xA9" that is actually one byte of data, representing digits with values 10 and 9. The hex number system (base 16) works just like binary and base 10 to represent 123, but see how fast we get there? Kids would count so high if they had 16 fingers:
 
 ```
 B * 1
