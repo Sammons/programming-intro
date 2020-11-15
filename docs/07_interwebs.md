@@ -2,7 +2,7 @@
 
 There are a lot of topics to cover here, so we'll keep it thin and you can google terms you learn here if you want to know more.
 
-## WEB Protocols
+## Web Protocols
 
 __LAN__
 

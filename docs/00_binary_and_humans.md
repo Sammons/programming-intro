@@ -84,7 +84,7 @@ That left column bottom to top 01111011 is binary :) just like the left column w
 
 -------
 
-What is really important to remember is that even though computers use different labels for quantities, they are representing the same quantities that we are in decimal.
+What is really important to remember is that even though computers use different labels for quantities, they are representing the same quantities that we are in base 10.
 
 ## Programming and binary
 
@@ -98,7 +98,7 @@ More jargon, and some trivia:
 * byte = 8 bits
 * kilobyte = 1024 bytes
 * megabyte = 1024 kilobytes
-* gigabyte = 1024 gigabytes
+* gigabyte = 1024 megabytes
 
 People are not always using 1024x, sometimes they use 1000x. There is always some confusion about whether someone  about "megabit" versus "megabyte" and they have different representations like Mb or MB.
 
