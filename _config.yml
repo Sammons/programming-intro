@@ -19,3 +19,4 @@ include:
  - docs/11_testing.md
  - docs/12_infrastructure.md
  - docs/13_editors.md
+theme: jekyll-theme-slate
