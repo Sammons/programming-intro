@@ -1,0 +1,21 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+ - index.md
+ - docs/00_binary_and_humans.md
+ - docs/01_filesystem.md
+ - docs/02_shell_scripting_intro.md
+ - docs/03_operating_system_and_hardware.md
+ - docs/04_low_level_programming.md
+ - docs/05_compilers_and_interpreters.md
+ - docs/06_high_level_programming.md
+ - docs/07_interwebs.md
+ - docs/08_web_servers.md
+ - docs/09_web_uis.md
+ - docs/10_version_control.md
+ - docs/11_testing.md
+ - docs/12_infrastructure.md
+ - docs/13_editors.md
